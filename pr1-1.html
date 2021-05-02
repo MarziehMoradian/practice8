@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./pr1-1.css">
+</head>
+<body>
+    <div class="form">
+        <p id="null"></p>
+        <form action="result.html">
+            
+            <lable>First Name</lable>
+            <input type="text" placeholder="Your name.." id="firstName" >
+            
+            <lable>Last Name</lable>
+            <input type="text" placeholder="Your last name.." id="lastName" >
+            
+            <labe>Country</lable>
+            <select name="country" id="country">
+                <option value="Australia">Australia</option>
+                <option value="Iran">Iran</option>
+                <option value="Canada">Canada</option>
+                <option value="Netherland">Netherland</option>
+            </select>
+            
+            <label >Email</label>
+            <input type="text" name="email" id="email"  placeholder="Your Email.." onkeyup="validationEmail()"  >
+            <div id="errorEmail"></div>
+            
+            <label >Phone Number</label>
+            <input type="number" name="number" id="phone" placeholder="Your Phone Number.." onkeyup=" validationPhone()"  >
+            <div id="errorPhone"></div>
+            
+            <lable>Subject</lable>
+            <textarea type="text" placeholder="Write somthing.." name="subject"  id="subject" ></textarea>
+            <input type="submit" name="submit" id="submit" onclick="foo()" >
+        </form>
+    </div>
+</body>
+<script src="pr1-1.js"></script>
+</html>

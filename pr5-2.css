@@ -1,0 +1,89 @@
+.brand{
+    color: rgb(204, 201, 201);
+    font-size: 30px;
+    /* font-weight: bold; */
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+ul{
+    margin-left:50%;
+   
+}
+li{
+   
+    font-family: monospace;
+    padding: 0 5px;
+}
+a{
+    color: rgb(172, 167, 167);
+   
+
+}
+nav{
+    background-color: rgb(246, 246, 246);
+}
+img{
+    object-fit: cover;
+    background-position: center;
+    height:500px;
+}
+.cap{
+    width:800px;
+    top:20%;
+}
+.cap h1,h2,p{
+    float: left;
+}
+.cap h1{
+    font-size: 100px;
+    font-weight: bold;
+    font-family:'Barlow Condensed';
+}
+.cap h2{
+    font-size: 80px;
+    font-family: 'Barlow Condensed';
+}
+.cap em{
+    color:yellow;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+.cap p{
+    font-size: 30px;
+    font-family: 'Barlow Condensed';
+}
+.para h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Barlow Condensed';
+    color: rgb(34, 33, 33);
+}
+hr{
+    width: 3%;
+    background-color:rgb(87, 84, 84);
+    height:2px;
+}
+.para{
+    padding: 80px;
+   
+}
+.para p{
+    text-align: center;
+    font-family: 'Barlow Condensed';
+    font-size: 25px;
+    margin-left:10%;
+    color: rgb(71, 69, 69);
+    
+}
+.row.spa{
+     margin-left: 80px;
+}
+.spa span{
+    padding: 10px;
+    height:100px;
+    background-color: rgb(165, 164, 162);
+}
+.coll{
+    height:100px;
+    background-color: rgb(165, 164, 162);
+    padding: 10px;
+}

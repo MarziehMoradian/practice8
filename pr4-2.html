@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./pr4-2.css">
+</head>
+<body>
+    <div class="container">
+        <a href="">About</a>
+        <a href="">Service</a>
+        <a href="">Clients</a>
+        <a href="">Contact</a>
+        <button class="dropdown-btn ">Dropdown
+            <b class="fa-caret-down"></b>
+        </button>
+        <div class="dropDown">
+            <a href="">Link1</a>
+            <a href="">Link2</a>
+            <a href="">Link3</a>
+        </div>
+        <a href="">Search</a>   
+    </div>
+    <div class="main">
+        <h2>Sidebar Dropdown</h2>
+        <p>Click on the dropdown button to open the dropdown menu inside the side navigation.</p>
+        <p>This sidebar is of full height (100%) and always shown.</p>
+        <p>Some random text..</p>
+    </div>
+</body>
+    <script>
+        let drop=document.querySelector('.dropDown');
+        let butt=document.getElementsByClassName('dropdown-btn');
+        for(let i=0;i<butt.length;i++){
+           butt[i].addEventListener('click',function(){
+               this.classList.toggle('active');
+               let dropDownContent=this.nextElementSibling;
+               if(dropDownContent.style.display==='block'){
+                   dropDownContent.style.dispay='none';
+                   drop.style.display='none';
+                }else{
+                   dropDownContent.style.display='block';
+                   //drop.style.display='block';
+               }
+           });
+        }
+    </script>
+</html>
